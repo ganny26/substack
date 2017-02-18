@@ -1,6 +1,7 @@
 var assert = require('assert'),
-    should = require('should'),
+    // should = require('should'),
     expect = require('chai').expect;
+should = require('chai').should;
 
 
 var answer;
@@ -45,6 +46,17 @@ describe('Test Suite 1', function() {
             expect(beverages).to.have.property('tea').with.lengthOf(3);
         });
     });
+
+    describe('Should Test', function() {
+        it('Should', function() {
+            foo.should.be.a('string');
+            foo.should.equal('bar');
+            foo.should.have.lengthOf(3);
+            beverages.should.have.property('tea').with.lengthOf(3);
+        });
+    });
+
+
 });
 
 
