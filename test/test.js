@@ -66,3 +66,22 @@ describe('Test Suite 2', function() {
         })
     });
 });
+
+
+
+describe('Test Suite 3', function() {
+    before(function() {
+        answer = 43;
+    });
+
+    describe('Scenario 1', function() {
+
+        it('Equals Check', function() {
+            expect(answer).to.equal(43);
+        })
+
+        it('Expected Check', function() {
+            expect(answer, 'topic [answer]').to.equal(43);
+        })
+    });
+});
