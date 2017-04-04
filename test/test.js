@@ -85,3 +85,21 @@ describe('Test Suite 3', function() {
         })
     });
 });
+
+
+describe('Test Suite 4', function() {
+    before(function() {
+        answer = 43;
+    });
+
+    describe('Equals checking 1', function() {
+
+        it('Case 1', function() {
+            expect(answer).to.equal(43);
+        })
+
+        it('Case 2', function() {
+            expect(answer, 'topic [answer]').to.equal(43);
+        })
+    });
+});
