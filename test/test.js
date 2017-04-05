@@ -9,6 +9,12 @@ var user = {
     pets: ['tobi', 'loki', 'jane', 'bandit']
 };
 
+var answer;
+var user = {
+    name: 'tj',
+    pets: ['tobi', 'loki', 'jane', 'bandit']
+};
+
 
 
 var foo = 'bar',
