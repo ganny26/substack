@@ -9,10 +9,14 @@
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "should": "^11.2.0",
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "snyk": "^1.42.0"
   },
   "scripts": {
-  	"start":"server.js",
-    "test": "mocha"
-  }
+    "start": "server.js",
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
