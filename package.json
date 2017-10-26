@@ -13,6 +13,7 @@
   },
   "scripts": {
   	"start":"node server.js",
-    "test": "mocha"
+    "test": "mocha",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec"
   }
 }
